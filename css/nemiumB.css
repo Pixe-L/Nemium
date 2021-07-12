@@ -1,0 +1,522 @@
+:root {
+	font-size: 16px;
+	--white: white;
+	--gray: #424242;
+	--graylight: #616161;
+	--black: #212121;
+	--black1: #212429;
+	--yellow: #fec62e;
+	--blue: #00c0fe;
+	--grays: #808080;
+	--dark: #000000;
+	--redYT: #ff0000;
+	--face: #1877f2;
+	--twit: #1da1f2;
+	/* nemiumB */
+	--background: #251f24;
+	--whites: #fff;
+	--grayss: #a5a3a5;
+	--pre: #3a3539;
+	--blockquote: #3a3539;
+	--font-family: 'Nunito', sans-serif;
+}
+
+body {
+	font-family: var(--font-family);
+	background: var(--background);
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* menu variantes*/
+.active a {
+	background-color: var(--dark);
+	color: var(--whites);
+	border-radius: 5px;
+	left: 0px;
+	top: 0px;
+	padding: 8px;
+}
+
+.link-variantes:hover {
+	background-color: var(--dark);
+	color: var(--whites);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.title-menu,
+.title-nav {
+	color: var(--whites);
+}
+
+.header ul {
+	list-style: none;
+}
+
+.link-variantes {
+	color: var(--grays);
+}
+
+.list {
+	margin-block-end: 70px;
+}
+
+.header {
+	inset-block-start: 0;
+	inset-block-start: -45px;
+}
+
+.header-content {
+	padding-inline: 20px;
+}
+
+header {
+	margin-block-start: 20px;
+	font-size: 14px;
+}
+
+header a {
+	text-decoration: none;
+}
+
+.content-nav a {
+	color: var(--graylight);
+}
+
+.content-nav ol {
+	list-style: none;
+	margin-left: 0px;
+}
+
+header li {
+	margin-block-end: 16px;
+}
+
+nav p {
+	color: var(--graylight);
+	margin-block-end: 24px;
+}
+/* 
+nav details summary {
+	font-weight: bold;
+	color: var(--graylight);
+} */
+
+ol li {
+	font-weight: normal;
+}
+
+/* hero */
+.hero {
+	background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+	block-size: 50px;
+}
+
+/* main */
+h1,
+h2,
+h3,
+h4 {
+	font-weight: normal;
+	color: var(--whites);
+}
+
+h1 {
+	font-size: 64px;
+	text-align: justify;
+	margin-block-start: 20px;
+	margin-block-end: 16px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 40px;
+	margin-block-start: 40px;
+	margin-block-end: 40px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 32px;
+	margin-block-start: 16px;
+	margin-block-end: 16px;
+	font-weight: 600;
+}
+
+hr {
+	margin-block-start: 40px;
+	margin-block-end: 40px;
+	border-color: rgba(97, 97, 97, 0.2);
+}
+
+p {
+	color: var(--grayss);
+	font-weight: 700;
+	margin-block-start: 16px;
+	margin-block-end: 40px;
+	font-size: 17px;
+}
+
+.coding {
+	margin-block-start: 16px;
+	margin-block-end: 40px;
+	padding: 40px;
+	background: var(--pre);
+	overflow: auto;
+	border-radius: 8px;
+	font-family: var(--font-family);
+}
+
+blockquote {
+	margin: 0px;
+	margin-block-start: 2rem;
+	margin-block-end: 4rem;
+	background-color: var(--blockquote);
+	/* border-left: 4px solid; */
+	padding: 1.5rem 1.5rem;
+	/* line-height: 32px; */
+	font-size: 24px;
+	border-radius: 8px;
+}
+
+.quote-title {
+	margin: 0;
+	color: var(--whites);
+	font-weight: 400;
+	line-height: 24px;
+	margin-block-end: 16px;
+}
+
+.quote-user {
+	font-weight: 400;
+	margin: 0;
+	color: var(--whites);
+}
+
+/* SEUDO ELEMENTOS */
+
+.section-content img {
+	margin-block-start: 40px;
+	margin-block-end: 16px;
+	display: block;
+	max-inline-size: 100%;
+}
+
+.section-content {
+	counter-reset: titleList;
+}
+
+.section-content h3 {
+	counter-increment: titleList;
+}
+
+/* .google::after {
+	content: '';
+	width: 12rem;
+	content: '';
+	width: 12rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.vsc::after {
+	content: '';
+	width: 14.25rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.google::after {
+	content: '';
+	width: 12rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.fig::after {
+	content: '';
+	width: 5.813rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.github::after {
+	content: '';
+	width: 6.25rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.html::after {
+	content: '';
+	width: 10.688rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.etiq::after {
+	content: '';
+	width: 8rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.dom::after {
+	content: '';
+	width: 5rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.seman::after {
+	content: '';
+	width: 9rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.atrib::after {
+	content: '';
+	width: 8rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.css::after {
+	content: '';
+	width: 4.5rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.regla::after {
+	content: '';
+	width: 11.5rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+}
+.selec::after {
+	content: '';
+	width: 14rem;
+	height: 4px;
+	display: block;
+	margin-block-start: 0.25rem;
+	background-color: var(--gray);
+} */
+
+.section-content h3::before {
+	content: counter(titleList, decimal) '. ';
+}
+
+.wrapper {
+	/* border: 1px solid blue; */
+	max-inline-size: 902px;
+	margin: auto;
+	/* max-width: 902px; */
+	/* block-size: 100px; */
+	/* overflow: auto; */
+	/* width: ; */
+}
+
+.main-content {
+	padding-inline: 16px;
+	/* border: 1px solid yellow; */
+}
+
+.li-modelBox {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: var(--gray);
+	margin-block-start: 1rem;
+}
+
+/* slider */
+
+.slider-container {
+	/* block-size: 100px; */
+	display: block;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	white-space: nowrap;
+}
+
+.video {
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+	font-size: 0;
+}
+
+.slider-bullet-list {
+	text-align: center;
+	margin-block-start: 10px;
+}
+
+.slider-bullet {
+	display: inline-block;
+	inline-size: 15px;
+	block-size: 15px;
+	background: var(--blue);
+	border-radius: 50%;
+}
+
+/* form */
+.form {
+	margin-block-start: 1rem;
+	margin-block-end: 113px;
+}
+
+.input-name,
+.input-email {
+	display: inline-block;
+}
+
+.input {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid var(--graylight);
+	background: var(--white);
+	color: var(--gray);
+	border-radius: 90px;
+	padding: 0.75rem 1rem;
+	font-size: 16px;
+	margin-block-end: 24px;
+	outline: none;
+}
+
+/* SELECTOR DE ATRIBUTO */
+
+.input-name {
+	width: 400px;
+	margin-right: 1rem;
+}
+
+.input-email {
+	width: 400px;
+	position: relative;
+}
+
+.button {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 25px;
+	border: 0;
+	background: var(--black);
+	color: var(--white);
+	padding: 0.5rem 1rem;
+	border-radius: 90px;
+	font-weight: 500;
+	line-height: 1.5rem;
+	width: 119px;
+	font-family: 'roboto', 'sans-serif';
+}
+
+.input::-moz-placeholder {
+	color: var(--blue);
+}
+
+.input::-webkit-input-placeholder {
+	color: var(--blue);
+}
+
+/* footer */
+.footer {
+	background-color: var(--black1);
+}
+
+.footer-content {
+	padding: 48px 0;
+}
+
+.text-footer,
+.social-networks {
+	text-align: center;
+	margin: 0;
+	color: var(--white);
+}
+
+.text-footer {
+	margin-block-end: 1rem;
+}
+
+.social-networks svg {
+	height: auto;
+	width: auto;
+	max-height: 30px;
+	max-width: 30px;
+	fill: var(--white);
+}
+
+.youtube:hover {
+	stroke: var(--redYT);
+	stroke-width: 25;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.facebook:hover {
+	stroke: var(--face);
+	stroke-width: 25;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.twitter:hover {
+	stroke: var(--twit);
+	stroke-width: 25;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/* Media Queries y Responsive Desing */
+
+@media screen and (min-width: 1366px) {
+	.hero {
+		block-size: 350px;
+	}
+
+	.header {
+		position: sticky;
+		inset-block-start: 0;
+		inset-block-start: -45px;
+	}
+
+	.header-content {
+		position: relative;
+		inset-block-start: 65px;
+		padding-inline: 0px;
+	}
+
+	header {
+		position: absolute;
+		inset-block-start: 0px;
+		inset-inline-start: -208px;
+		inline-size: 188px;
+	}
+
+	h1 {
+		font-size: 64px;
+		margin-block-start: 64px;
+		font-weight: 700;
+	}
+}

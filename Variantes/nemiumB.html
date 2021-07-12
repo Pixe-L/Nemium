@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/nemiumB.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+		<title>Nemium B</title>
+		<meta property="og:title" content="Proyecto del Curso Esencial de HTML y CSS" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:description"
+			content="Todo lo que necesitas saber en tu día a día como desarrollador FrontEnd."
+		/>
+		<meta property="og:url" content="https://yasoom.github.io/HTML-Y-CSS/" />
+		<meta property="og:image" content="https://yasoom.github.io/HTML-Y-CSS/images/dom.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="../Favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="../Favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../Favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="../Favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../Favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="../Favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../Favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="../Favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="../Favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="../Favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png" />
+		<link rel="manifest" href="../Favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		
+		<div class="hero"></div>
+		
+		<div class="header">
+			<div class="wrapper">
+				<div class="header-content">
+					<header>
+						<nav class="variantes">
+							<div class="list">
+								<div class="list1">
+									<div class="list-content">
+										<p class="title-nav">VARIANTES DEL PROYECTO</p>
+										<ul>
+											<li>
+												<a class="link-variantes" href="/Variantes/nemiumA.html">Nemium A</a>
+											</li>
+											<li class="active">
+												<a class="link-variantes" href="/Variantes/nemiumB.html">Nemium B</a>
+											</li>
+											<li>
+												<a class="link-variantes" href="/Variantes/nemiumC.html">Nemium C</a>
+											</li>
+											<li>
+												<a class="link-variantes" href="/Variantes/nemiumD.html">Nemium D</a>
+											</li>
+											<li>
+												<a class="link-variantes" href="/Variantes/nemiumE.html">Nemium E</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</nav>
+							<p class="title-nav">CONTENIDO</p>
+							<nav class="content-nav">
+								<details open>
+									<summary class="title-menu">Setup</summary>
+									<ol>
+										<li>
+											<a href="#google-chrome">1. Google Chrome </a>
+										</li>
+										<li>
+											<a href="#vsc">2. Visual Studio Code </a>
+										</li>
+										<li>
+											<a href="#figma">3. Figma </a>
+										</li>
+										<li>
+											<a href="#github">4. GitHub </a>
+										</li>
+									</ol>
+								</details>
+								<details open>
+									<summary class="title-menu">Conceptos esenciales del Desarrollo Web</summary>
+									<ol>
+										<li>
+											<a href="#html">1. Qué es HTML </a>
+										</li>
+										<li>
+											<a href="#etiq">2. Etiquetas </a>
+										</li>
+										<li>
+											<a href="#dom">3. DOM </a>
+										</li>
+										<li>
+											<a href="#seman">4. Semántica </a>
+										</li>
+										<li>
+											<a href="#atrib">5. Atributos </a>
+										</li>
+										<li>
+											<a href="#css">6. Qué es css </a>
+										</li>
+										<li>
+											<a href="#script">7. Scripts </a>
+										</li>
+									</ol>
+								</details>
+								<script>
+									const $detailsList = document.querySelectorAll('details');
+									$detailsList.forEach(($details) => {
+										$details.querySelector('summary').addEventListener('click', expand);
+									});
+									function expand() {
+										$detailsList.forEach(($details) => {
+											$details.removeAttribute('open');
+										});
+									}
+									</script>
+					</header>
+				</div>
+			</div>
+		</div>
+	</nav>
+		<main class="main">
+			<div class="wrapper">
+				<div class="main-content">
+					<h1>Curso esencial de HTML y SCC</h1>
+					<p>
+						Este es el inicio de mi carrera como desarrollador Web, empezaré aprendiendo HTML y SCC
+						para la creación de contenidos, en el nivel 2 aprenderé de componentes y en el 3 sobre
+						layouts.
+					</p>
+					<hr />
+					<section class="section-content">
+						<h2>Setup</h2>
+						<img
+							src="../images/google_chrome.png"
+							alt="Logo de Google Chrome"
+							title="Logo de Google Chrome"
+						/>
+						<h3 id="google-chrome" class="google underline">Google Chrome</h3>
+						<p>
+							Chrome va a ser el navegador que utilizaremos en el curso por su extremo soporte de
+							nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
+						</p>
+						<img
+							src="../images/visual_studio_code.png"
+							alt="Logo de Visual Studio Code"
+							title="Logo de Visual Studio Code"
+						/>
+						<h3 id="vsc" class="vsc underline">Visual Studio Code</h3>
+						<p>
+							Visual Studio Code es el editor de texto más popular y potente del mercado
+							actualmente, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el
+							complemento perfecto para cualquier programador sin importar el lenguaje en el que se
+							desemvuelva.
+						</p>
+						<img src="../images/figma.png" alt="Logo de Figma" title="Logo de Figma" />
+						<h3 id="figma" class="fig underline">Figma</h3>
+						<p>
+							Figma es una la herramienta más popular en la actualidad para entregar diseños a los
+							desarrolladores para su implementación por su fácil uso porque puede ser usado
+							directamente desde el navegador.
+						</p>
+						<img src="../images/github.png" alt="Logo de GitHub" title="Logo de GitHub" />
+						<h3 id="github" class="github underline">GitHub</h3>
+						<p>
+							Así como en Facebook te encuentran tus amigos, en Github te encuentran otras
+							programadoras y programadores de todo el mundo, en vez de subir fotos de tus viajes
+							aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera
+							privada, Github será esencial para almacenar tu futuro portafolio.
+						</p>
+						<blockquote>
+							<p class="quote-title">"Este es el inicio de mi carrera como Desarrollador Web"</p>
+							<p class="quote-user">
+								 Arturo C.
+							</p>
+						</blockquote>
+					</section>
+					<section class="section-content">
+						<h2>Conceptos esenciales del Desarrollo Web</h2>
+						<h3 id="html" class="html underline">Qué es HTML</h3>
+						<p>
+							Hyper Text Markup Languaje o Lenguaje de Marcas Hipertexto. Es el componente más
+							básico de la web. Define el significado y la estructura del contenido.
+							<code>const name = 'your name'</code>
+						</p>
+						<pre class="coding">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Hola Mundo!!
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre
+						>
+						<h3 id="etiq" class="etiq underline">Etiquetas</h3>
+						<p>
+							Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido
+							de nuestro website y cada una tiene características y usos diferentes aunque
+							visualmente den un resultado similar.
+						</p>
+						<p>
+							Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras
+							diferentes como header, footer, section o div, aquí es donde la semántica será la
+							respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea de
+							su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día
+							a día como Software Developer.
+						</p>
+						<h3 id="dom" class="dom underline">DOM</h3>
+						<p>
+							El Document Object Model es una estructura de árbol que representará todos nuestros
+							proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles
+							infinitos. cuando entendemos esta anidación podemos identificar dependencias,
+							herencias en css y que tan complejo es nuestro proyecto.
+						</p>
+						<img
+							src="../images/dom.png"
+							alt="Imagen del Esquema árbol que representa al Document Object Model (DOM)"
+							title="Imagen del Esquema de ártbol que representa al Document Object Model (DOM)"
+						/>
+						<h3 id="seman" class="seman underline">Semántica</h3>
+						<p>
+							La semántica le brinda sentido a cada elemento existen en un sitio web, algunos
+							elementos será meramente decorativos y no deben significar nada pero otros serán
+							títulos y deberán estar en diferente jerarquías o alguna secciones serán más
+							relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck
+							Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para
+							estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad
+							de tu sitio web, para que persona class="" con habilidades diferentes puedan entender cada
+							contenido.
+						</p>
+						<h3 id="atrib" class="atrib underline">Atributos</h3>
+						<p>
+							Los atributos le dan características extra a las etiquetas para complementar
+							información y son pre programadas por el navegador, algunos atributos funcionan en
+							todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en
+							solo alguna etiquetas como src.
+						</p>
+						<h3 id="css" class="css">CSS</h3>
+						<p>
+							Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de
+							estilos utilizado para describir la presentación de documentos HTML
+						</p>
+						<h3 class="regla underline">Reglas de CSS</h3>
+						<pre class="coding">
+.selector {
+propiedad: declaracion;
+}
+            </pre>
+						<p>Puede haber más de un selector y N propiedades, ejemplo:</p>
+						<pre class="coding">
+.title, .name {
+color: red;
+font-size: 15px
+}
+              </pre
+						>
+						<h3 class="selec underline">Selectores de CSS</h3>
+						<h4>.Clase</h4>
+						<p>Las clases se pueden repetir y un elemento puede tener más de una clase.</p>
+						<pre class="coding">
+&lt;style&gt;
+.title {
+color: red
+}
+&lt;/style&gt;4
+&lt;h1 class=&quot;title&quot;&gt;Hola!&lt;/h1&gt;
+              </pre
+						>
+						<h4>Selector "*" (asterisco)</h4>
+						<p>Afecta a todos los elementos.</p>
+						<pre class="coding">
+&lt;style&gt;
+* {
+color: red
+}
+&lt;/style&gt;
+&lt;h1 id=&quot;tittle&quot;&gt;Hola&lt;/h1&gt;
+&lt;h2 class=&quot;sub-tittle&quot;&gt;ke&lt;/h2&gt;
+&lt;h3&gt;ase&lt;/h3&gt;
+              </pre
+						>
+						<h4>#id</h4>
+						<p>Solo un elemento puede tener el mismo id en una página.</p>
+						<pre class="coding">
+&lt;style&gt;
+#title {
+color: red
+}
+&lt;/style&gt;
+&lt;h1 id=&quot;title&quot;&gt;Hola!&lt;/h1&gt;
+              </pre
+						>
+						<h4>> Hijo directo</h4>
+						<p>Los hijos directos del selector previo a ></p>
+						<pre class="coding">
+&lt;style&gt;
+body &gt; .title {
+color: red
+}
+&lt;/style&gt;
+&lt;h1 class=&quot;title&quot;&gt;Hola!&lt;/h1&gt;
+&lt;main&gt;
+&lt;h2 class=&quot;title&quot;&gt;ke&lt;/h2&gt;
+&lt;/main&gt;
+&lt;h3&gt;ase&lt;/h3&gt;
+              </pre
+						>
+						<img
+							src="../images/CSS.png"
+							alt="Imagen del logo de CSS con código"
+							title="Imagen del logo de CSS con código"
+						/>
+						<h2>Modelo de caja</h2>
+						<h2 id="script">Scripts</h2>
+						<p>
+							Este script se utiliza para desplegar automáticamente los menús creados, es con Java
+							Script.
+						</p>
+						<pre class="coding">
+&lt;script&gt;
+const $detailsList = document.querySelectorAll('details')
+$detailsList.forEach(($details) =&gt; {
+$details.querySelector('summary').addEventListener('click', expand)
+})
+function expand() {
+$detailsList.forEach(($details) =&gt; {
+$details.removeAttribute('open')
+})
+}
+&lt;/script&gt;
+                </pre
+						>
+						<h2>El modelo de caja está compuesto por:</h2>
+						<p>
+							Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de
+							nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
+						</p>
+						<ol>
+							<li>Tamaño del contenido / ancho y alto.</li>
+							<li>Padding / Relleno.</li>
+							<li>Border / Bordes.</li>
+							<li>Margin / Márgenes.</li>
+						</ol>
+						<h2>Propiedades físicas para el modelo de caja:</h2>
+						<ul>
+							<li class="li-modelBox">width / height</li>
+							<li class="li-modelBox">margin / margin-top | margin-right | margin-bottom | margin-left</li>
+							<li class="li-modelBox">border / border-top | border-right | border-bottom | border-left</li>
+							<li class="li-modelBox">padding / padding-top | padding-right | padding-bottom | padding-left</li>
+						</ul>
+						<h2>Propiedades lógicas para el modelo de caja:</h2>
+						<ul>
+							<li class="li-modelBox">inline-size / block-size</li>
+							<li class="li-modelBox">
+								margin-block | margin-inline | margin-block-start | margin-block-end |
+								margin-inline-start | margin-inline-end
+							</li>
+							<li class="li-modelBox">
+								border-block | border-inline | border-block-start | border-block-end |
+								border-inline-start | border-inline-end
+							</li>
+							<li class="li-modelBox">
+								padding-block | padding-inline | padding-block-start | padding-block-end |
+								padding-inline-start | padding-inline-end
+							</li>
+						</ul>
+						<h2>Modelo de caja.</h2>
+						<img
+							src="../images/pixel.jpg"
+							alt="Imagen de mi banner del canal de Youtube"
+							title="Imagen de mi banner del canal de Youtube"
+						/>
+						<p>
+							En el apartado img src="" alt="" poner la diagonal "/" va a buscar las imagenes desde
+							la raíz del proyecto.
+						</p>
+						<a href="https://www.youtube.com/c/TUTOSPIXEL" target="_blank">
+							Mi canal de Youtube!!
+						</a>
+						<p>El target="_blank" sirve para abrir una página nueva en una ventana nueva</p>
+						<p>
+							Si tienes alguna pregunta escribeme a
+							<a href="mailto:tutospixel@hotmail.com">tutospixel@hotmail.com</a>
+						</p>
+					</section>
+					<!-- CREACION DE SLIDER -->
+					<div class="section-content">
+						<h2>Videos de mi Canal de Youtube</h2>
+						<div class="slider">
+							<scroll-container class="slider-container">
+								<scroll-page class="slider-slide" id="video-1">
+									<iframe
+										class="video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/mhiHRI13uW0"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</scroll-page>
+								<scroll-page class="slider-slide" id="video-2">
+									<iframe
+										class="video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/AzuiirmeB8Y"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</scroll-page>
+								<scroll-page class="slider-slide" id="video-3">
+									<iframe
+										class="video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/gb-d9k3soWU"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</scroll-page>
+							</scroll-container>
+							<div class="slider-bullet-list">
+								<a href="#video-1" class="slider-bullet"></a>
+								<a href="#video-2" class="slider-bullet"></a>
+								<a href="#video-3" class="slider-bullet"></a>
+							</div>
+						</div>
+					</div>
+					<!-- FORMULARIO -->
+					<div class="form">
+						<h2>Ingresa a la Comunidad PIXEL</h2>
+						<form action="#">					
+							  <div class="input-name">
+									<input class="input" type="text" required placeholder="Nombre" />
+								</div>
+								<div class="input-email">
+									<input class="input" type="email" required placeholder="Correo Electrónico" />
+									<button class="button" type="submit">Suscribete</button>
+								</div>							
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-content">
+				<p class="text-footer">Arturo CR ® 2021♥</p>
+				<div class="social-networks">
+					<a href="https://www.youtube.com/c/TUTOSPIXEL/join" target="_blank"><svg aria-hidden="true" data-prefix="fab" data-icon="youtube-square" class="svg-inline--fa fa-youtube-square fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path class="youtube" d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"/></svg></a>
+					<a href="https://www.facebook.com/tutospixel" target="_blank"><svg aria-hidden="true" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path class="facebook" d="M400 32H48A48 48 0 000 80v352a48 48 0 0048 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0048-48V80a48 48 0 00-48-48z"/></svg></a>
+					<a href="https://twitter.com/iPiixeeL" target="_blank"><svg aria-hidden="true" data-prefix="fab" data-icon="twitter-square" class="svg-inline--fa fa-twitter-square fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path class="twitter" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 01-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
