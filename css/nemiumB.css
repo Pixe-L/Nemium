@@ -18,6 +18,7 @@
 	--grayss: #a5a3a5;
 	--pre: #3a3539;
 	--blockquote: #3a3539;
+	--button: #157efb;
 	--font-family: 'Nunito', sans-serif;
 }
 
@@ -153,14 +154,6 @@ hr {
 	border-color: rgba(97, 97, 97, 0.2);
 }
 
-p {
-	color: var(--grayss);
-	font-weight: 700;
-	margin-block-start: 16px;
-	margin-block-end: 40px;
-	font-size: 17px;
-}
-
 .coding {
 	margin-block-start: 16px;
 	margin-block-end: 40px;
@@ -169,17 +162,17 @@ p {
 	overflow: auto;
 	border-radius: 8px;
 	font-family: var(--font-family);
+	color: var(--whites);
 }
 
 blockquote {
-	margin: 0px;
+	margin: 0git;
 	margin-block-start: 2rem;
 	margin-block-end: 4rem;
 	background-color: var(--blockquote);
 	/* border-left: 4px solid; */
 	padding: 1.5rem 1.5rem;
 	/* line-height: 32px; */
-	font-size: 24px;
 	border-radius: 8px;
 }
 
@@ -189,12 +182,22 @@ blockquote {
 	font-weight: 400;
 	line-height: 24px;
 	margin-block-end: 16px;
+	font-size: 24px;
 }
 
 .quote-user {
+	font-size: 24px;
 	font-weight: 400;
 	margin: 0;
 	color: var(--whites);
+}
+
+p {
+	color: var(--grayss);
+	font-weight: 700;
+	margin-block-start: 16px;
+	margin-block-end: 40px;
+	font-size: 17px;
 }
 
 /* SEUDO ELEMENTOS */
@@ -206,13 +209,13 @@ blockquote {
 	max-inline-size: 100%;
 }
 
-.section-content {
+/* .section-content {
 	counter-reset: titleList;
 }
 
 .section-content h3 {
 	counter-increment: titleList;
-}
+} */
 
 /* .google::after {
 	content: '';
@@ -321,9 +324,9 @@ blockquote {
 	background-color: var(--gray);
 } */
 
-.section-content h3::before {
+/* .section-content h3::before {
 	content: counter(titleList, decimal) '. ';
-}
+} */
 
 .wrapper {
 	/* border: 1px solid blue; */
@@ -343,8 +346,12 @@ blockquote {
 .li-modelBox {
 	font-size: 1rem;
 	line-height: 1.5rem;
-	color: var(--gray);
+	color: var(--grayss);
 	margin-block-start: 1rem;
+}
+
+.modelbox li {
+	color: var(--grayss);
 }
 
 /* slider */
@@ -393,10 +400,10 @@ blockquote {
 .input {
 	width: 100%;
 	box-sizing: border-box;
-	border: 1px solid var(--graylight);
-	background: var(--white);
-	color: var(--gray);
-	border-radius: 90px;
+	border: 1px solid var(--grayss);
+	background: var(--background);
+	color: var(--grayss);
+	border-radius: 8px;
 	padding: 0.75rem 1rem;
 	font-size: 16px;
 	margin-block-end: 24px;
@@ -406,29 +413,26 @@ blockquote {
 /* SELECTOR DE ATRIBUTO */
 
 .input-name {
-	width: 400px;
+	width: 100%;
 	margin-right: 1rem;
 }
 
 .input-email {
-	width: 400px;
+	width: 100%;
 	position: relative;
 }
 
 .button {
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	bottom: 25px;
-	border: 0;
-	background: var(--black);
+	width: 100%;
+	border: none;
+	background: var(--button);
 	color: var(--white);
 	padding: 0.5rem 1rem;
-	border-radius: 90px;
+	border-radius: 8px;
 	font-weight: 500;
 	line-height: 1.5rem;
-	width: 119px;
-	font-family: 'roboto', 'sans-serif';
+	font-family: --font-family;
+	font-size: 16px;
 }
 
 .input::-moz-placeholder {
@@ -441,7 +445,7 @@ blockquote {
 
 /* footer */
 .footer {
-	background-color: var(--black1);
+	background-color: var(--whites);
 }
 
 .footer-content {
@@ -452,7 +456,7 @@ blockquote {
 .social-networks {
 	text-align: center;
 	margin: 0;
-	color: var(--white);
+	color: var(--background);
 }
 
 .text-footer {
@@ -464,25 +468,25 @@ blockquote {
 	width: auto;
 	max-height: 30px;
 	max-width: 30px;
-	fill: var(--white);
+	fill: var(--background);
 }
 
 .youtube:hover {
-	stroke: var(--redYT);
+	fill: var(--redYT);
 	stroke-width: 25;
 	stroke-linecap: round;
 	stroke-linejoin: round;
 }
 
 .facebook:hover {
-	stroke: var(--face);
+	fill: var(--face);
 	stroke-width: 25;
 	stroke-linecap: round;
 	stroke-linejoin: round;
 }
 
 .twitter:hover {
-	stroke: var(--twit);
+	fill: var(--twit);
 	stroke-width: 25;
 	stroke-linecap: round;
 	stroke-linejoin: round;
