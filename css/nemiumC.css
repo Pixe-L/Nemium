@@ -14,6 +14,7 @@
 	--twit: #1da1f2;
 	--font-family: 'Roboto', sans-serif;
 	--border: #c4c4c4;
+	--blockquote: #e5e5e5;
 }
 
 body {
@@ -157,7 +158,7 @@ h3 {
 	color: var(--gray);
 	margin-block-start: 16px;
 	margin-block-end: 16px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 hr {
@@ -167,7 +168,6 @@ hr {
 }
 
 p {
-	color: var(--white20);
 	font-weight: normal;
 	margin-block-start: 16px;
 	margin-block-end: 40px;
@@ -178,7 +178,7 @@ p {
 	margin-block-start: 16px;
 	margin-block-end: 40px;
 	padding: 40px;
-	background: var(--yellow);
+	background: var(--blockquote);
 	overflow: auto;
 	border-radius: 3px;
 	font-family: 'roboto', 'sans-serif';
@@ -192,14 +192,15 @@ blockquote {
 	border-left: 4px solid;
 	padding-left: 16px;
 	line-height: 32px;
-	font-size: 24px;
 }
 
 .quote-title {
+	font-size: 24px;
 	color: var(--gray);
 }
 
 .quote-user {
+	font-size: 24px;
 	color: var(--graylight);
 }
 
@@ -220,7 +221,7 @@ blockquote {
 	counter-increment: titleList;
 }
 
-.google::after {
+/* .google::after {
 	content: '';
 	width: 12rem;
 	content: '';
@@ -325,7 +326,7 @@ blockquote {
 	display: block;
 	margin-block-start: 0.25rem;
 	background-color: var(--gray);
-}
+} */
 
 .section-content h3::before {
 	content: counter(titleList, decimal) '. ';
@@ -474,21 +475,21 @@ blockquote {
 }
 
 .youtube:hover {
-	stroke: var(--redYT);
+	fill: var(--redYT);
 	stroke-width: 25;
 	stroke-linecap: round;
 	stroke-linejoin: round;
 }
 
 .facebook:hover {
-	stroke: var(--face);
+	fill: var(--face);
 	stroke-width: 25;
 	stroke-linecap: round;
 	stroke-linejoin: round;
 }
 
 .twitter:hover {
-	stroke: var(--twit);
+	fill: var(--twit);
 	stroke-width: 25;
 	stroke-linecap: round;
 	stroke-linejoin: round;
