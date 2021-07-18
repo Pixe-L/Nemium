@@ -97,8 +97,8 @@ ol li {
 
 /* hero */
 .hero {
-	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent),
-		url('../images/pettern.png');
+	background-image: gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%),
+		url(../images/backgroung.png);
 	block-size: 50px;
 }
 

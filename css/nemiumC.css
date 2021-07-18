@@ -40,26 +40,15 @@ body {
 	border-radius: 5px;
 }
 
-.hero {
+/* .hero {
 	block-size: 350px;
-}
+	border: 1px solid red;
+} */
 
 .header {
 	position: relative;
-	inset-block-start: 0;
-	inset-block-start: -45px;
-}
-
-.header-content {
-	position: relative;
-	inset-block-start: 65px;
-	padding-inline: 0px;
-}
-
-header {
-	position: relative;
-	margin-block-start: 4rem;
-	inline-size: 188px;
+	/* inset-block-start: 0;
+	inset-block-start: -45px; */
 }
 
 .header ul {
@@ -125,11 +114,11 @@ ol li {
 }
 
 /* hero */
-.hero {
+/* .hero {
 	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent),
 		url('../images/pettern.png');
 	block-size: 50px;
-}
+} */
 
 /* main */
 h1,
