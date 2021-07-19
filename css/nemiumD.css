@@ -97,7 +97,7 @@ header li {
 
 summary {
 	color: var(--dark);
-	text-align: auto;
+	/* text-align: auto; */
 }
 
 /* hero */
@@ -197,6 +197,7 @@ blockquote {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 100%;
 }
 
 .section-content {
@@ -398,8 +399,7 @@ blockquote {
 	.header-content {
 		position: absolute;
 		top: 0px;
-		right: 70px;
-		align-items: center;
+		right: 10px;
 	}
 
 	h1 {
