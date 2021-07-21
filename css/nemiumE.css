@@ -219,6 +219,10 @@ p {
 	margin-block-start: 1rem;
 }
 
+.li-box {
+	color: var(--paragraph);
+}
+
 .modelbox li {
 	color: var(--paragraph);
 }
