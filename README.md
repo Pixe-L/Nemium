@@ -9,4 +9,4 @@ Proyecto Nemium para poder iniciar tu blog, con unas estructuras muy Cool.⭐
 
 ### 📸View of home
 
-<a href="https://gifyu.com/image/ObsL"><img src="https://s6.gifyu.com/images/PreviewNemiumsHome.png" alt="PreviewNemiumsHome.png" border="0" /></a>
+<a href="yasoom.github.io/nemium/"><img src="https://s6.gifyu.com/images/PreviewNemiumsHome.png" alt="PreviewNemiumsHome.png" border="0" /></a>
